@@ -1,0 +1,62 @@
+html{
+    font-size: 17.6px;
+}
+*{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul,ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* CSS Header */
+header{
+    background-color: #bfb5b5;
+    z-index: 9999;
+}
+header .wrap-icons svg{
+    width: 1.5rem;
+}
+.phone-contact{
+    background-color: #dfc6c6;
+    border-radius: 50%;
+    position: fixed;
+    right: 2.5rem;
+    bottom: 5rem;
+}
+
+img{
+    width: 100%;
+}
+
+.form-custom{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.collapsed{
+    background-color: #dfc6c6;
+    color: rgb(12, 9, 3);
+}
+
+.show{
+    background-color: none;
+}
+
+/* Hàm: is, not  */
+
+.effect-hover li:is(:hover){
+    background: #bfb5b5;
+    scale: 1.1;
+    transition: all 0.8s ease-in-out;
+}
+
+.effect-hover:hover li:is(:not(:hover)){
+    background: #dfc6c6;
+    transition: all 0.8s ease-in-out;
+}

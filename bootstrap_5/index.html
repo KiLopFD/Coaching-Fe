@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <div class="wrap container">
+            <div class="row align-items-center g-4 ">
+                <div class="col d-flex align-items-center gx-5 m-0 gap-md-0 gap-2">
+                    <div class="logo">
+                        Logo
+                    </div>
+                    <div class="show-nav d-md-none d-block">
+                        <button class="btn btn-primary px-1" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 4.6C3 4.03995 3 3.75992 3.10899 3.54601C3.20487 3.35785 3.35785 3.20487 3.54601 3.10899C3.75992 3 4.03995 3 4.6 3H13.4C13.9601 3 14.2401 3 14.454 3.10899C14.6422 3.20487 14.7951 3.35785 14.891 3.54601C15 3.75992 15 4.03995 15 4.6V5.4C15 5.96005 15 6.24008 14.891 6.45399C14.7951 6.64215 14.6422 6.79513 14.454 6.89101C14.2401 7 13.9601 7 13.4 7H4.6C4.03995 7 3.75992 7 3.54601 6.89101C3.35785 6.79513 3.20487 6.64215 3.10899 6.45399C3 6.24008 3 5.96005 3 5.4V4.6Z" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 11.6C3 11.0399 3 10.7599 3.10899 10.546C3.20487 10.3578 3.35785 10.2049 3.54601 10.109C3.75992 10 4.03995 10 4.6 10H19.4C19.9601 10 20.2401 10 20.454 10.109C20.6422 10.2049 20.7951 10.3578 20.891 10.546C21 10.7599 21 11.0399 21 11.6V12.4C21 12.9601 21 13.2401 20.891 13.454C20.7951 13.6422 20.6422 13.7951 20.454 13.891C20.2401 14 19.9601 14 19.4 14H4.6C4.03995 14 3.75992 14 3.54601 13.891C3.35785 13.7951 3.20487 13.6422 3.10899 13.454C3 13.2401 3 12.9601 3 12.4V11.6Z" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 18.6C3 18.0399 3 17.7599 3.10899 17.546C3.20487 17.3578 3.35785 17.2049 3.54601 17.109C3.75992 17 4.03995 17 4.6 17H9.4C9.96005 17 10.2401 17 10.454 17.109C10.6422 17.2049 10.7951 17.3578 10.891 17.546C11 17.7599 11 18.0399 11 18.6V19.4C11 19.9601 11 20.2401 10.891 20.454C10.7951 20.6422 10.6422 20.7951 10.454 20.891C10.2401 21 9.96005 21 9.4 21H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6422 3.10899 20.454C3 20.2401 3 19.9601 3 19.4V18.6Z" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Lựa Chọn
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="m-0 d-md-none d-block effect-hover">
+                                    <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Docs</a></li>
+                                    <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Examples</a></li>
+                                    <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Icons</a></li>
+                                    <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Themes</a></li>
+                                    <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <!-- d-md-flex >= md , < md -> d-none -->
+                        <ul class="m-0 d-md-flex d-none">
+                            <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Docs</a></li>
+                            <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Examples</a></li>
+                            <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Icons</a></li>
+                            <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Themes</a></li>
+                            <li><a class="text-black-50 px-2 py-3 d-inline-block" href="">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col m-0">
+                    <div class="input-group d-md-flex d-none">
+                        <input type="text" class="form-control" placeholder="Tim kiem...."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-success" type="button" id="button-addon2">Button</button>
+                    </div>
+
+                </div>
+                <div class="col d-flex align-items-center justify-content-end m-0">
+                    <div class="wrap-icons">
+                        <svg class="" width="64px" height="64px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                            stroke="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>github [#142]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs> </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
+                                        fill="#000000">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path
+                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                id="github-[#142]"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class="con" fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="-143 145 512 512" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M215.2,361.2 c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="sec-1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quia harum tenetur? Velit adipisci amet
+            repellat iste eum, voluptate itaque officiis necessitatibus, molestias nihil praesentium fugiat explicabo
+            quidem dolore officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at, facilis nisi quaerat cum ut sequi
+            ducimus cupiditate voluptates molestias dolor, earum repellat! Deserunt placeat quas quis illum, dolore
+            voluptas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at, facilis nisi quaerat cum ut sequi
+            ducimus cupiditate voluptates molestias dolor, earum repellat! Deserunt placeat quas quis illum, dolore
+            voluptas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at, facilis nisi quaerat cum ut sequi
+            ducimus cupiditate voluptates molestias dolor, earum repellat! Deserunt placeat quas quis illum, dolore
+            voluptas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at, facilis nisi quaerat cum ut sequi
+            ducimus cupiditate voluptates molestias dolor, earum repellat! Deserunt placeat quas quis illum, dolore
+            voluptas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium at, facilis nisi quaerat cum ut sequi
+            ducimus cupiditate voluptates molestias dolor, earum repellat! Deserunt placeat quas quis illum, dolore
+            voluptas?
+        </section>
+    </main>
+    <!-- <div class="phone-contact d-inline-block">
+        <svg class="p-2" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M5.11596 12.7268L8.15456 9.08666C8.46255 8.69067 8.61655 8.49267 8.69726 8.27061C8.76867 8.07411 8.79821 7.86486 8.784 7.65628C8.76793 7.42055 8.67477 7.18766 8.48846 6.72187L7.77776 4.94513C7.50204 4.25581 7.36417 3.91116 7.12635 3.68525C6.91678 3.48618 6.65417 3.3519 6.37009 3.29856C6.0477 3.23803 5.68758 3.32806 4.96733 3.50812L3 4.00002C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3122 20.7617 17.952 20.7012 17.6297C20.6478 17.3456 20.5136 17.083 20.3145 16.8734C20.0886 16.6356 19.7439 16.4977 19.0546 16.222L17.4691 15.5878C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4002C15.4877 15.512 15.2854 15.7144 14.8807 16.1191L11.7943 19.1569"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </div> -->
+    <img class="" src="./assets/images/pic1.jpg" alt="">
+    <table class="table table-dark table-striped">
+
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+    <form action="" class="form-custom">
+        <div class="mb-3 container">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 container">
+            <label for="textArea" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="textArea" rows="3"></textarea>
+        </div>
+    </form>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showPopUp">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="showPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng Kí</h1>
+                    <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3" action="" method="post">
+                        <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationDefault03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationDefault04" class="form-label">State</label>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationDefault05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
